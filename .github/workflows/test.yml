@@ -1,0 +1,21 @@
+name: Test
+on: [push]
+jobs:
+  my_first_job:
+   runs-on: ubuntu-latest
+   steps:
+     - name: checkout repository
+       uses: actions/checkout@v3
+     - name: Setup Node.js
+       uses: actions/setup-node@v3 
+       with: 
+         Node-version: '16'
+     - name: Say Hello
+       run: echo "Hello Github Actions!"
+     - name: List files
+       run: ls -R
+         
+       
+    
+   
+ 
