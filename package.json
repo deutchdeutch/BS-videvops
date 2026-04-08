@@ -2,7 +2,7 @@
   "scripts": {
     "start": "parcel ./src/index.html",
     "build": "rm -rf build && parcel build -d build --public-url ./ --no-source-maps ./src/index.html",
-    "lint": "eslint src/**/*.js",
+    "lint": "eslint src/**/*.ts",
     "test": "echo \"pas encore de test \"&& exit 0",
     "zip": "rm -f bundle.zip && cd build && bestzip ../bundle.zip *",
     "bundle": "npm run  build && npm run zip"
