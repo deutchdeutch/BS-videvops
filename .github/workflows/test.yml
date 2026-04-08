@@ -20,6 +20,11 @@ jobs:
        run: npm run lint
      - name: Documentation
        run: npm run doc 
+     - name: Upload Documentation
+       uses: actions/upload-artifact@v4
+       with:
+         name: documentation-site
+         path: docs/
          
        
     
