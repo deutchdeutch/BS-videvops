@@ -14,7 +14,7 @@ jobs:
        run: echo "Hello Github Actions!"
      - name: List files
        run: ls -R
-     - name: setup npm CI
+     - name: setup npm ci
        run: npm ci
      - name: Run Linter
        run: npm run lint
