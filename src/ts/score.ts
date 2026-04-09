@@ -1,7 +1,8 @@
 const HIGHSCORE_KEY = 'psi_highscore';
 
 export function calculateNewScore(currentScore: number, pointsToAdd: number): number {
-  return currentScore + pointsToAdd;
+ const result=  currentScore + pointsToAdd;
+ return result < 0 ? 0 : result;
 }
 export function isNewHighscore(score: number, highscore: number): boolean {
   return score > highscore;
