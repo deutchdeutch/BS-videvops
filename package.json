@@ -3,7 +3,7 @@
     "start": "parcel ./src/index.html",
     "build": "rm -rf build && parcel build -d build --public-url ./ --no-source-maps ./src/index.html",
     "lint": "eslint src/**/*.ts",
-    "doc": "typedoc --out docs src/ts",
+    "doc": "typedoc --out docs src/ts --skipErrorChecking",
     "test": "jest",
     "zip": "rm -f bundle.zip && cd build && bestzip ../bundle.zip *",
     "bundle": "npm run  build && npm run zip"
